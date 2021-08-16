@@ -12,10 +12,12 @@
 <p>—–相关问题解决办法转载于<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_32623363/article/details/100524856">这位作者这篇文章</a></p>
 <p>在本人查证官方Hexo文档后以及多方佐证，这个<strong>似乎没什么用</strong>，他的主要目的在于：在使用命令：<code>hexo new &lt;文件名&gt;</code>时帮助作者创建一个与文件名同名的文件夹用来存放文件所用到的图片及附件。也就是说就是<strong>帮你创建系统指定的资源目录，并不为你解决本地文档生成静态html文件时的资源路径转换问题</strong>，（<em>这里的知识对于我来说比较深，我还不太了解</em>）提到资源路径转换问题就要提到网上说的那些诸如 <code>hexo-asset-image</code> 这类图片路径转换的插件。他们都有一些共同点：<strong>根据不同源文档图片路径，转换成部署静态html时所需要的图片路径</strong> 这类插件的缺点是：</p>
 <ol>
-<li>你的typora偏好设置要与作者一一对应，本地资源路径还有插入图片时的根目录设置都要跟作者对应。遗憾的是很多作者在说自己所使用插件时，并未对其typora的相关设置进行详细说明。</li>
-<li>即使作者提供了插件还有typora设置详细说明时，还要修改各配置文件，又或者加入一些全局设在，例如下面的</li>
+<li><p>你的typora偏好设置要与作者一一对应，本地资源路径还有插入图片时的根目录设置都要跟作者对应。遗憾的是很多作者在说自己所使用插件时，并未对其typora的相关设置进行详细说明。</p>
+</li>
+<li><p>即使作者提供了插件还有typora设置详细说明时，还要修改各配置文件，又或者加入一些全局设在，例如下面的</p>
+<p><img src="/images/hexo%E4%B8%8Etypora%E7%9A%84%E7%88%B1%E6%81%A8%E7%BC%A0%E7%BB%B5/image-20210816150222231.png" alt="image-20210816150222231"></p>
+</li>
 </ol>
-<p><img src="../images/hexo%E4%B8%8Etypora%E7%9A%84%E7%88%B1%E6%81%A8%E7%BC%A0%E7%BB%B5/image-20210816150222231.png" alt="错误示例"></p>
 <p>然而能问此问题的大部分都是不太懂这方面知识的同学，所以个人觉得有点麻烦了。这还不一定能设置成功。</p>
 <p>3.需要自定义修改转换路径的js。能不能找到这个js不说，你起码得保证自己不出错吧</p>
 <p><strong>解决办法</strong></p>
@@ -26,7 +28,7 @@
 <p>最后为了方便：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_32623363/article/details/100524856">这位作者这篇文章</a>做一个总结及补充（也没啥补充的）</p>
 <p>补充1.<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_32623363/article/details/100524856">这位作者这篇文章</a>的最后一句感觉比较重要：<strong>一定要先设置了图片根目录后再插入图片，否则图片路径会不正确喔！</strong></p>
 <p>补充2：typora版本不一样可能设置地方不一样</p>
-<p>下面就放我的版本以及相关设置图片<img src="../images/hexo%E4%B8%8Etypora%E7%9A%84%E7%88%B1%E6%81%A8%E7%BC%A0%E7%BB%B5/image-20210816151458058.png" alt="image-20210816151458058"></p>
-<p>偏好设置<img src="../images/hexo%E4%B8%8Etypora%E7%9A%84%E7%88%B1%E6%81%A8%E7%BC%A0%E7%BB%B5/image-20210816151707793.png" alt="image-20210816151707793"></p>
-<p>根目录设置所在位置<img src="../images/hexo%E4%B8%8Etypora%E7%9A%84%E7%88%B1%E6%81%A8%E7%BC%A0%E7%BB%B5/image-20210816152053590.png" alt="image-20210816152053590"></p>
+<p>下面就放我的版本以及相关设置图片<img src="/images/hexo%E4%B8%8Etypora%E7%9A%84%E7%88%B1%E6%81%A8%E7%BC%A0%E7%BB%B5/image-20210816151458058.png"></p>
+<p>偏好设置<img src="/images/hexo%E4%B8%8Etypora%E7%9A%84%E7%88%B1%E6%81%A8%E7%BC%A0%E7%BB%B5/image-20210816151837263.png"></p>
+<p>根目录设置所在位置<img src="/images/hexo%E4%B8%8Etypora%E7%9A%84%E7%88%B1%E6%81%A8%E7%BC%A0%E7%BB%B5/image-20210816152053590.png"></p>
 </div><div class="tags"></div><div class="post-nav"><a class="next" href="/2021/08/16/hello-world/">Hello World</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://example.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/08/16/hexo%E4%B8%8Etypora%E7%9A%84%E7%88%B1%E6%81%A8%E7%BC%A0%E7%BB%B5/">hexo与typora的爱恨缠绵</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/08/16/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2021 <a href="/." rel="nofollow">往复.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="Copy Successed!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
